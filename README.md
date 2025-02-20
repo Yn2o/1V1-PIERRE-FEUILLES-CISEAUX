@@ -28,7 +28,7 @@ Fin de la partie : Lorsque la partie se termine, un message final est logué pou
 
 Registration: The players TRUMP and POUTINE register by calling inscrireTrump() and inscrirePoutine().
 
-Choice of players: Each player chooses between "rock", "paper", or "scissors" by calling faiteVotreChoix() with the correct answer in lowercase.
+Choice of players: Each player chooses between "pierre", "feuille", or "ciseaux" by calling faiteVotreChoix() with the correct answer in lowercase.
 
 Resolution: The game determines the winner by comparing the players' choices.
 
@@ -40,7 +40,7 @@ To track the game via logs (events), here's what you need to know:
 
 Logs of players' choices: When each player makes their choice, an event is emitted to inform them of their choice and the game state. You'll see messages like:
 
-"TRUMP, you are Player 1. Make your choice: rock, paper, or scissors." "POUTINE, you are Player 2. Make your choice: rock, paper, or scissors."
+"TRUMP, you are Player 1. Make your choice: pierre, feuille, or ciseaux." "POUTINE, you are Player 2. Make your choice:pierre, feuille, or ciseaux."
 
 Log of the game result: After each round, you can follow the evolution with messages like:
 
