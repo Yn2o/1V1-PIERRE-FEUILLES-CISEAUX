@@ -26,6 +26,32 @@ Fin de la partie : Lorsque la partie se termine, un message final est logué pou
 "Le gagnant est TRUMP."
 "Le jeu est terminé. Merci d'avoir joué !"
 
+Registration: The players TRUMP and POUTINE register by calling inscrireTrump() and inscrirePoutine().
+
+Choice of players: Each player chooses between "rock", "paper", or "scissors" by calling faiteVotreChoix() with the correct answer in lowercase.
+
+Resolution: The game determines the winner by comparing the players' choices.
+
+Tie: If the choices are identical, the players make their choices again.
+
+End of game: The winner is announced, and the game ends. You can restart the game by calling reinitialiserJeu() if you wish.
+
+To track the game via logs (events), here's what you need to know:
+
+Logs of players' choices: When each player makes their choice, an event is emitted to inform them of their choice and the game state. You'll see messages like:
+
+"TRUMP, you are Player 1. Make your choice: rock, paper, or scissors." "POUTINE, you are Player 2. Make your choice: rock, paper, or scissors."
+
+Log of the game result: After each round, you can follow the evolution with messages like:
+
+"A duel has started between TRUMP and POUTINE." "The winner is TRUMP." or "There is a tie! Please make your choices again."
+
+End of game: When the game ends, a final message is logged to announce the result:
+
+"The winner is TRUMP." "The game is over. Thank you for playing!"
+
+
+
 
 
 
